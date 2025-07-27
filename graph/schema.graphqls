@@ -1,0 +1,19 @@
+type Report {
+  id: ID!
+  title: String!
+  description: String!
+  createdAt: String!
+}
+
+type Query {
+  reports: [Report!]!
+}
+
+type Mutation {
+  createReport(input: NewReport!): Report!
+}
+
+input NewReport {
+  title: String!
+  description: String!
+}

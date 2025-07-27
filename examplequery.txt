@@ -1,0 +1,19 @@
+mutation {
+  createReport(input: {
+    title: "env error",
+    description: "first load env then get variables"
+  }) {
+    id
+    title
+    description
+    createdAt
+  }
+}
+
+query {
+  reports {
+    id
+    title
+    description
+  }
+}
